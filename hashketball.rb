@@ -160,10 +160,7 @@ end
 
 def team_names(name)
   game_hash.each do |game, team_stats|
-    team_stats.each do |team|
-      if team_stats[:team_name] == name
-        return team_stats[:team_name]
-      end
-    end
+    team_stats[:team_name]
   end
 end
+
