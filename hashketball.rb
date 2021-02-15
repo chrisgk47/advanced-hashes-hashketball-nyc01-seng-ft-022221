@@ -190,7 +190,7 @@ def player_stats(player)
     team_stats.each do |key, value|
       if key == player
         value.each do |stats|
-          player_stats << player[:players]
+          player_stats << stats[:players]
         end
       end
     end
