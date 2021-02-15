@@ -163,4 +163,3 @@ def team_names(name)
     team_stats[:team_name]
   end
 end
-
