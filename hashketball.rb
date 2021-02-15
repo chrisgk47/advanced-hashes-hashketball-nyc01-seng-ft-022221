@@ -137,7 +137,7 @@ def num_points_scored(name)
     end
   end
 end
-  binding.pry
+#binding.pry
 
 def shoe_size(player)
   game_hash.each do |game, team_stats|
@@ -148,6 +148,7 @@ def shoe_size(player)
     end
   end
 end
+#binding.pry
 
 def team_colors(team)
   game_hash.each do |game, team_stats|
@@ -158,9 +159,11 @@ def team_colors(team)
     end
   end
 end
+#binding.pry
 
 def team_names
   game_hash.collect do |game, team_stats|
     team_stats[:team_name]
   end
 end
+binding.pry
