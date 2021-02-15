@@ -171,9 +171,16 @@ end
 def player_numbers(team)
   brooklyn_numbers = []
   game_hash.collect do |game, team_stats|
-    team_stats[:players].each do |players|
-      brooklyn_numbers << team(players[:number])
+    if team_stats[:team_name] == team
+      team_stats.each do |key, value|
+        if key == :players
+          value.each do |player|
+            brooklyn_numbers << player[:number]
+          end
+        end
+      end
     end
   end
   brooklyn_numbers
 end
+  
