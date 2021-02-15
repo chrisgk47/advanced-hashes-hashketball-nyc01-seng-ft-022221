@@ -153,8 +153,6 @@ def team_colors(team)
   game_hash.each do |game, team_stats|
     team_stats[:colors].each do |colors|
         team_color << {:team => colors[:colors]}
-      end
     end
   end
 end
-      
