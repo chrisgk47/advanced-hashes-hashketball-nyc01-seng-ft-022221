@@ -131,9 +131,9 @@ end
 def num_points_scored(name)
   name.each do |home, away|
     home.each do |players|
-      binding.pry
       players.each do |points|
         players[points][3]
+        binding.pry
       end
     end
     away.each do |players|
