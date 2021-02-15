@@ -127,6 +127,14 @@ def game_hash
 end
 
 # Write code here
-def num_points_scored
+def num_points_scored(name)
+  players =
+  name.each do |home, away|
+    home.each do |players|
+      players.each do |points|
+        players[points]
+      end
+    end
+  end        
   game_hash
 end
