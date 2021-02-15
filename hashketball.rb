@@ -128,13 +128,17 @@ end
 
 # Write code here
 def num_points_scored(name)
-  players =
   name.each do |home, away|
     home.each do |players|
       players.each do |points|
-        players[points]
+        players[points][3]
       end
     end
+    away.each do |players|
+      players.each do |points|
+        players[points][3]
+      end
+    end    
   end        
   game_hash
 end
