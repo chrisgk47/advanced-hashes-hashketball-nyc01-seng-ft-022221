@@ -129,16 +129,10 @@ end
 
 # Write code here
 def num_points_scored(name)
-  name.each do |home, away|
-    binding.pry
-    home.each do |players|
-      players.each do |points|
-        players[points][3]
-      end
-    end
-    away.each do |players|
-      players.each do |points|
-        players[points][3]
+  game_hash.each do |team, team_stats|
+    team_stats[:players].each do |players|
+      if players[:player_name] == name
+        player[:points]
       end
     end
   end
