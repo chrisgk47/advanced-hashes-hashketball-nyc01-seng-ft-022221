@@ -168,8 +168,10 @@ def team_names
 end
 #binding.pry
 
-def player_numbers
+def player_numbers(team_numbers)
   game_hash.each do |game, team_stats|
-    team_stats[:players][:number]
+    team_stats.each do |num|
+      team_stats[:players][:number]
+    end
   end
 end
