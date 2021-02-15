@@ -170,7 +170,7 @@ end
 
 def player_numbers(team_numbers)
   game_hash.collect do |game, team_stats|
+    binding.pry
     team_stats[:players][:number]
   end
 end
-  
