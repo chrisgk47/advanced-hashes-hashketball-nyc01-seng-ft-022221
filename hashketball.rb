@@ -183,4 +183,3 @@ def player_numbers(team)
   end
   brooklyn_numbers
 end
-  
