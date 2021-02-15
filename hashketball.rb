@@ -196,7 +196,7 @@ def player_stats(player)
   player_stats
 end
 
-def big_shoe_rebounds(rebounds)
+def big_shoe_rebounds
   biggest_shoe = nil
   game_hash.each do |game, team_stats|
     team_stats[:players].each do |stats|
