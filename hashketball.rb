@@ -161,6 +161,6 @@ end
 def team_names
   game_hash.each do |game, team_stats|
     binding.pry
-    return game[team_stats][:team_name]
+    return team_stats[:team_name]
   end
 end
