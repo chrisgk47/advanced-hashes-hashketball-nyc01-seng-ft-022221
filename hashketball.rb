@@ -170,7 +170,7 @@ end
 
 def player_numbers(team_numbers)
   game_hash.each do |game, team_stats|
-    team_stats.each do |num|
+    team_stats.collect do |num|
       team_stats[:players][:number].to_s
     end
   end
