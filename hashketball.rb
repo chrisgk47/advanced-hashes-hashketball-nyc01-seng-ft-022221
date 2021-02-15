@@ -153,8 +153,8 @@ def team_colors(team)
   game_hash.each do |game, team_stats|
     binding.pry
     team_stats[:colors].each do |colors|
-      
-        
+
+
     end
   end
 end
