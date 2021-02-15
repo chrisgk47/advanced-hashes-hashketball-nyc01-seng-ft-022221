@@ -168,12 +168,12 @@ def team_names
 end
 #binding.pry
 
-def player_numbers(player)
+def player_numbers(team)
+  brooklyn_numbers = []
   game_hash.collect do |game, team_stats|
     team_stats[:players].each do |players|
-      if players[:player_name] == player
-        return players[:number]
-      end
+      brooklyn_numbers << players[:number]
     end
   end
+  brooklyn_numbers
 end
