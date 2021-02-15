@@ -190,9 +190,9 @@ def player_stats(player)
     team_stats.each do |key, value|
       if key == player
         value.each do |stats|
-          binding.pry
           player_stats << stats[:players]
         end
+        binding.pry
       end
     end
   end
