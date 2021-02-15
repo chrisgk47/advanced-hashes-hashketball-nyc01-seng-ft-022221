@@ -172,7 +172,7 @@ def player_numbers(team)
   brooklyn_numbers = []
   game_hash.collect do |game, team_stats|
     team_stats[:players].each do |players|
-      brooklyn_numbers << team_stats[:players][:number]
+      brooklyn_numbers << players[:number]
     end
   end
   brooklyn_numbers
